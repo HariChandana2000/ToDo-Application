@@ -23,7 +23,7 @@ const ExportFile = ({ items }) => {
     <CsvDownload
       datas={transformData}
       handleEmpty={handleEmptyData}
-      filename={new Date().toLocaleDateString() + "_data.csv"}
+      filename={new Date().toLocaleString() + "_data.csv"}
     >
       <button className='export-btn'>Export Data</button>
     </CsvDownload>
